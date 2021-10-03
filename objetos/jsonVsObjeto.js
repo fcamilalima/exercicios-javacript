@@ -19,18 +19,20 @@ console.log(JSON.stringify(obj))
 console.log(JSON.parse('{"a": 1, "b": 2, "c": 3}'))
 // O objeto entre aspas simples e os atributos JSON entre 
 // aspas duplas.
-// Resposta: {"a":1,"b":2,"c":3}
+// Resposta: {a: 1,b: 2,c: 3}
+
 console.log(JSON.parse('{"a": 1.7, "b": "string", "c": ' +
     'true, "d": {}, "e": []}'))
+
 // Os atributos JSON devem estar entre aspas duplas.
 // JSON suporta vários formatos diferentes: decimal, string,
 // booleano, objetos, arrays.
-// Resposta: { a: 1, b: 'string', c: true, d: {}, e: [] }
+// Resposta: { a: 1.7, b: 'string', c: true, d: {}, e: [] }
 
 // console.log(JSON.parse('{"a": 1.7, "b": \'string\', "c":' + 
-//     'true, "d": {}, "e": []}')) -> Dá erro no \'string\' 
-//      por não aceitar a representação de strings entre 
-//      \' .. \'.
+//     'true, "d": {}, "e": []}')) -> Vai dar erro no  
+//      \'string\' por não aceitar a representação de 
+//      strings entre \' .. \'.
 
 // JSON Validator.
 // https://jsonlint.com
